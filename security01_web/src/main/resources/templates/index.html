@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <span>hello</span>
+    <h3>获取用户的详细信息</h3>
+    <ul>
+        <li sec:authentication="principal.username"></li>
+        <li sec:authentication="principal.authorities"></li>
+        <li sec:authentication="principal.accountNonExpired"></li>
+        <li sec:authentication="principal.accountNonLocked"></li>
+        <li sec:authentication="principal.enabled"></li>
+    </ul>
+    <form action="/logout" method="get">
+        <input type="submit" value="点我注销登录">
+    </form>
+</body>
+</html>
