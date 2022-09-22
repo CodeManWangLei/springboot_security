@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/security01_web/pom.xml" />
         <option value="$PROJECT_DIR$/security02_split/pom.xml" />
+        <option value="$PROJECT_DIR$/security03_password/pom.xml" />
       </list>
     </option>
   </component>

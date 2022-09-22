@@ -10,4 +10,9 @@ public class LoginController {
     public String login(){
         return "login ok";
     }
+
+
+    @RequestMapping("/hello")
+    public void helleRedis(){
+    }
 }
